@@ -1,0 +1,42 @@
+name: Calculation Engine Task
+description: Financial formula and validation logic tasks
+title: "[Engine] "
+labels:
+  - engine
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: Business calculation objective.
+      placeholder: Implement variance and estimated profit calculations.
+    validations:
+      required: true
+  - type: textarea
+    id: formulas
+    attributes:
+      label: Formula Scope
+      description: Link formulas from docs/architecture/domain-formulas.md.
+      placeholder: Expected revenue, actual revenue, variance, variance percent.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Must be deterministic and testable.
+      placeholder: |-
+        - Outputs in minor units
+        - Edge cases covered
+        - Typed error results for invalid input
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Required Tests
+      description: Enumerate concrete unit tests.
+      placeholder: Zero, boundary, negative, and extreme input scenarios.
+    validations:
+      required: true
+

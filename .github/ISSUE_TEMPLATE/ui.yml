@@ -1,0 +1,42 @@
+name: UI Task
+description: Compose UI and UX flow tasks
+title: "[UI] "
+labels:
+  - ui
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What user behavior this screen supports.
+      placeholder: Build daily closing form with clear validation.
+    validations:
+      required: true
+  - type: textarea
+    id: ux_constraints
+    attributes:
+      label: UX Constraints
+      description: Include speed and accessibility constraints.
+      placeholder: Large tap targets, font scaling safe, close flow under 60 seconds.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Functional and visual expectations.
+      placeholder: |-
+        - Validation messages are clear
+        - Error states are visible and recoverable
+        - Data maps to domain contracts only
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Test Plan
+      description: Manual and automated checks.
+      placeholder: Compose UI tests + manual font scaling checks.
+    validations:
+      required: true
+
